@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="questions-container">
+      <form id="my-form" class="questions">
+        <h2>Form</h2>
+        <h3 class="space">Name:</h3>
+        <label for="name"></label>
+        <input type="text" id="name" name="name" required>
+        <h3 class="space">Email:</h3>
+        <label for="email">What is your e-mail adress?</label>
+        <input placeholder="johndoe@gmail.com" type="text" id="email" name="email" required>
+        <h3 class="space">Gender:</h3>
+        <div class="option-group">
+          <input type="radio" id="gender-male" name="genders" value="male">
+          <label for="gender-male">Male</label><br>
+          <input type="radio" id="gender-female" name="genders" value="female">
+          <label for="gender-female">Female</label><br>
+          <input type="radio" id="gender-other" name="genders" value="other">
+          <label for="gender-other">Other</label><br>
+        </div>
+        <h3 class="space">Languages:</h3>
+        <div class="option-group">
+          <input type="checkbox" id="portuguese" name="languages" value="portuguese">
+          <label for="portuguese">Portuguese</label><br>
+          <input type="checkbox" id="english" name="languages" value="english">
+          <label for="english">Enlish</label><br>
+          <input type="checkbox" id="french" name="languages" value="french">
+          <label for="french">French</label><br>
+          <input type="checkbox" id="german" name="languages" value="german">
+          <label for="german">German</label><br>
+        </div>
+        <input class="button space" type="submit">
+        <span class="loading-text">Loading...</span>
+      </form>
+    </section>
+
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+  
+    <section class="answers-container show-answers-container">
+      <div class="answers">
+      </div>
+    </section>
+  </div>
+
+
+
+  <script src="./index.js"></script>
+</body>
+</html>
